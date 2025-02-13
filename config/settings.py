@@ -122,7 +122,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
-    os.path.join(BASE_DIR, 'home/static'),    # Global static files (like corestyles.css)
+    os.path.join(BASE_DIR, 'home/static'),
+    os.path.join(BASE_DIR, 'contact/static')    # Global static files (like corestyles.css)
 ]
 
 # Ensure Django collects all static files
