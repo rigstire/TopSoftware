@@ -43,6 +43,8 @@ INSTALLED_APPS = [
     #local apps
     'contact',
     'home',
+    'pricing',
+    'portfolio',
 ]
 
 MIDDLEWARE = [
@@ -124,6 +126,8 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
     os.path.join(BASE_DIR, 'home/static'),
     os.path.join(BASE_DIR, 'contact/static'),
+    os.path.join(BASE_DIR, 'pricing/static'),
+    os.path.join(BASE_DIR, 'portfolio/static')
             # Global static files (like corestyles.css)
 ]
 
