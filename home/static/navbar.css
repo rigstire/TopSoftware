@@ -3,6 +3,7 @@
    ========================================================================== */
    :root {
 <<<<<<< HEAD
+<<<<<<< HEAD
     --primary-color: #2196f3;   /* Light Blue */
     --secondary-color: #1976d2; /* Deeper Blue */
     --dark-blue: #0d47a1;       /* Dark Blue */
@@ -11,12 +12,18 @@
     --secondary-color: #1976d2;  /* Deeper Blue */
     --dark-blue: #0d47a1;        /* Dark Blue */
 >>>>>>> 263751523687322cc77dd1cfc498d684d66cfc9f
+=======
+    --primary-color: #2196f3;   /* Light Blue */
+    --secondary-color: #1976d2; /* Deeper Blue */
+    --dark-blue: #0d47a1;       /* Dark Blue */
+>>>>>>> 8721cde007d5798ea9a04edcab4c0d96ce4d6b72
     --button-hover: #1565c0;
     --white: #ffffff;
     --headerColor: var(--white);
   }
   
   /* ==========================================================================  
+<<<<<<< HEAD
 <<<<<<< HEAD
      Base Navbar Styles (Fully Transparent, No Blur)  
      ========================================================================== */
@@ -41,28 +48,39 @@
   /* CONTAINER */
 =======
      Base Navbar Styles (Glassmorphism / Sleek)  
+=======
+     Base Navbar Styles (Fully Transparent, No Blur)  
+>>>>>>> 8721cde007d5798ea9a04edcab4c0d96ce4d6b72
      ========================================================================== */
+  
+  /* MAIN NAV WRAPPER */
   #cs-navigation {
     position: fixed;
-    top: 0.5rem; /* Reduced from 1rem */
-    left: 50%;
-    transform: translateX(-50%);
-    width: 95%;
-    max-width: 1200px;
-    border-radius: 1rem;
-    background: linear-gradient(135deg, rgba(13,71,161,0.5), rgba(25,118,210,0.5));
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    background: none !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    border-radius: 0 !important;
+    transform: none !important;
     z-index: 10000;
-    transition: background 0.3s, top 0.3s, border-radius 0.3s;
+    /* Remove or reduce any padding if you want it flush with the top */
+    padding: 0.5rem 1rem !important;
+    transition: none !important;
   }
   
+<<<<<<< HEAD
   /* Container */
 >>>>>>> 263751523687322cc77dd1cfc498d684d66cfc9f
+=======
+  /* CONTAINER */
+>>>>>>> 8721cde007d5798ea9a04edcab4c0d96ce4d6b72
   .cs-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+<<<<<<< HEAD
 <<<<<<< HEAD
     padding: 0 !important;  /* Remove extra container padding if desired */
   }
@@ -77,22 +95,31 @@
   /* NAV WRAPPER */
 =======
     padding: 0.5rem 1rem; /* Reduced padding */
+=======
+    padding: 0 !important;  /* Remove extra container padding if desired */
+>>>>>>> 8721cde007d5798ea9a04edcab4c0d96ce4d6b72
   }
   
-  /* Logo */
+  /* LOGO */
   .cs-logo img {
-    height: 30px; /* Reduced height from 40px */
+    height: 100px;
+    width: 100px;
     object-fit: contain;
   }
   
+<<<<<<< HEAD
   /* Navigation */
 >>>>>>> 263751523687322cc77dd1cfc498d684d66cfc9f
+=======
+  /* NAV WRAPPER */
+>>>>>>> 8721cde007d5798ea9a04edcab4c0d96ce4d6b72
   .cs-nav {
     flex: 1;
     margin-left: 1.5rem;
     position: relative;
   }
   
+<<<<<<< HEAD
 <<<<<<< HEAD
   /* MOBILE TOGGLE BUTTON */
   .cs-toggle {
@@ -104,6 +131,12 @@
     background: transparent;
     border: none;
 >>>>>>> 263751523687322cc77dd1cfc498d684d66cfc9f
+=======
+  /* MOBILE TOGGLE BUTTON */
+  .cs-toggle {
+    background: transparent !important;
+    border: none !important;
+>>>>>>> 8721cde007d5798ea9a04edcab4c0d96ce4d6b72
     display: flex;
     align-items: center;
     justify-content: center;
@@ -118,10 +151,14 @@
   }
   .cs-line {
 <<<<<<< HEAD
+<<<<<<< HEAD
     background: var(--white) !important;
 =======
     background: var(--white);
 >>>>>>> 263751523687322cc77dd1cfc498d684d66cfc9f
+=======
+    background: var(--white) !important;
+>>>>>>> 8721cde007d5798ea9a04edcab4c0d96ce4d6b72
     height: 2px;
     width: 100%;
     position: absolute;
@@ -133,25 +170,35 @@
   .cs-line3 { bottom: 0; }
   
 <<<<<<< HEAD
+<<<<<<< HEAD
   /* NAV LINKS WRAPPER (NO BACKGROUND, NO BLUR) */
 =======
   /* Navigation Links Wrapper */
 >>>>>>> 263751523687322cc77dd1cfc498d684d66cfc9f
+=======
+  /* NAV LINKS WRAPPER (NO BACKGROUND, NO BLUR) */
+>>>>>>> 8721cde007d5798ea9a04edcab4c0d96ce4d6b72
   .cs-ul-wrapper {
     position: absolute;
     top: 100%;
     left: 0;
     width: 100%;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 8721cde007d5798ea9a04edcab4c0d96ce4d6b72
     background: none !important;
     backdrop-filter: none !important;
     -webkit-backdrop-filter: none !important;
     border-radius: 0 !important;
+<<<<<<< HEAD
 =======
     background: inherit;
     backdrop-filter: inherit;
     border-radius: 0 0 1rem 1rem;
 >>>>>>> 263751523687322cc77dd1cfc498d684d66cfc9f
+=======
+>>>>>>> 8721cde007d5798ea9a04edcab4c0d96ce4d6b72
     overflow: hidden;
     transform: scaleY(0);
     transform-origin: top;
@@ -162,10 +209,14 @@
   }
   
 <<<<<<< HEAD
+<<<<<<< HEAD
   /* NAV LIST */
 =======
   /* Navigation List */
 >>>>>>> 263751523687322cc77dd1cfc498d684d66cfc9f
+=======
+  /* NAV LIST */
+>>>>>>> 8721cde007d5798ea9a04edcab4c0d96ce4d6b72
   .cs-ul {
     list-style: none;
     margin: 0;
@@ -179,17 +230,23 @@
   }
   .cs-li-link {
 <<<<<<< HEAD
+<<<<<<< HEAD
     color: var(--headerColor) !important;
     text-decoration: none !important;
 =======
     color: var(--headerColor);
     text-decoration: none;
 >>>>>>> 263751523687322cc77dd1cfc498d684d66cfc9f
+=======
+    color: var(--headerColor) !important;
+    text-decoration: none !important;
+>>>>>>> 8721cde007d5798ea9a04edcab4c0d96ce4d6b72
     font-size: 1.25rem;
     transition: color 0.3s;
   }
   .cs-li-link:hover,
   .cs-li-link.cs-active {
+<<<<<<< HEAD
 <<<<<<< HEAD
     color: var(--primary-color) !important;
   }
@@ -212,23 +269,27 @@
   /* MOBILE STYLES (max-width: 1023px) */
 =======
     color: var(--primary-color);
+=======
+    color: var(--primary-color) !important;
+>>>>>>> 8721cde007d5798ea9a04edcab4c0d96ce4d6b72
   }
   
-  /* Contact Button */
+  /* CONTACT BUTTON */
   .cs-nav-button {
-    padding: 0.5rem 1rem;
-    background: transparent;
-    border: 2px solid var(--white);
-    color: var(--white);
-    border-radius: 0.5rem;
-    text-decoration: none;
+    padding: 0.5rem 1rem !important;
+    background: transparent !important;
+    border: 2px solid var(--white) !important;
+    color: var(--white) !important;
+    border-radius: 0.5rem !important;
+    text-decoration: none !important;
     transition: background 0.3s, color 0.3s;
   }
   .cs-nav-button:hover {
-    background: var(--primary-color);
-    color: var(--dark-blue);
+    background: var(--primary-color) !important;
+    color: var(--dark-blue) !important;
   }
   
+<<<<<<< HEAD
   /* Dark Mode Toggle */
   #dark-mode-toggle {
     background: transparent;
@@ -241,6 +302,9 @@
      MOBILE STYLES (max-width: 1023px)  
      ========================================================================== */
 >>>>>>> 263751523687322cc77dd1cfc498d684d66cfc9f
+=======
+  /* MOBILE STYLES (max-width: 1023px) */
+>>>>>>> 8721cde007d5798ea9a04edcab4c0d96ce4d6b72
   @media only screen and (max-width: 1023px) {
     .cs-container {
       justify-content: space-between;
@@ -296,27 +360,22 @@
 =======
   }
   
-  /* ==========================================================================  
-     DESKTOP STYLES (min-width: 1024px)  
-     ========================================================================== */
+  /* DESKTOP STYLES (min-width: 1024px) */
   @media only screen and (min-width: 1024px) {
     #cs-navigation {
-      top: 0.75rem; /* Reduced from 1.5rem */
-      padding: 0.5rem 1.5rem; /* Reduced padding */
-      background: linear-gradient(135deg, rgba(13,71,161,0.5), rgba(25,118,210,0.5));
-      border-radius: 1rem;
+      top: 0 !important;
+      padding: 0.5rem 1.5rem !important;
+      border-radius: 0 !important;
     }
     .cs-container {
       flex-direction: row;
     }
     .cs-nav {
-      display: block;
+      display: block !important;
     }
     .cs-ul-wrapper {
-      position: static;
-      transform: none;
-      background: transparent;
-      backdrop-filter: none;
+      position: static !important;
+      transform: none !important;
     }
     .cs-ul {
       flex-direction: row;
@@ -328,8 +387,12 @@
     }
     /* Hide mobile toggle button on desktop */
     .cs-toggle {
-      display: none;
+      display: none !important;
     }
   }
+<<<<<<< HEAD
 >>>>>>> 263751523687322cc77dd1cfc498d684d66cfc9f
+=======
+  
+>>>>>>> 8721cde007d5798ea9a04edcab4c0d96ce4d6b72
   
