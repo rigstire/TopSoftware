@@ -5,7 +5,11 @@
 <link rel="stylesheet" href="{% static 'css/corestyles.css' %}">
 {% include 'navbar.html' %}
 
+<<<<<<< HEAD
 <!-- Inline styles to update text colors for better visibility on the dark background -->
+=======
+<!-- Inline styles to update text colors for better visibility on the blue background -->
+>>>>>>> 263751523687322cc77dd1cfc498d684d66cfc9f
 <style>
   /* Ensure headers, links, and labels appear in white */
   #contact-1150 .cs-topper,
@@ -22,7 +26,11 @@
 <!--                Contact TopSoftware           -->
 <!-- ============================================ -->
 
+<<<<<<< HEAD
 <section id="contact-1150" style="background: #000; padding-top: 180px;">
+=======
+<section id="contact-1150" style="background: linear-gradient(135deg, var(--primary-color), var(--dark-blue));">
+>>>>>>> 263751523687322cc77dd1cfc498d684d66cfc9f
     <div class="cs-container">
         <div class="cs-content">
             <span class="cs-topper">Contact TopSoftware</span>
@@ -31,6 +39,7 @@
         <div class="cs-contact-group">
             <!-- Replace the old image with your new static image -->
             <picture class="cs-picture">
+<<<<<<< HEAD
                 <!-- Mobile Image -->
                 <source media="(max-width: 600px)" srcset="{% static 'contact/contactphoto.webp' %}">
                 <!-- Tablet and Above Image -->
@@ -42,6 +51,13 @@
                     alt="Team at TopSoftware" 
                     width="630" 
                     height="300">
+=======
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/group.jpg">
+                <!--Tablet and above Image-->
+                <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/group.jpg">
+                <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/group.jpg" alt="Team at TopSoftware" width="630" height="300">
+>>>>>>> 263751523687322cc77dd1cfc498d684d66cfc9f
             </picture>
             <p class="cs-contact-text">
                 At TopSoftware, we specialize in developing innovative apps, websites, and custom software solutions that meet your business needs. Let’s work together to transform your vision into reality.
@@ -70,7 +86,12 @@
 
         <!-- Django Contact Form -->
         <form class="cs-form" id="cs-form-1150" name="Contact Form" method="post" action="{% url 'contact' %}">
+<<<<<<< HEAD
             {% csrf_token %}
+=======
+            {% csrf_token %}  <!-- CSRF Protection -->
+
+>>>>>>> 263751523687322cc77dd1cfc498d684d66cfc9f
             <label class="cs-label">
                 Name
                 <input class="cs-input" required type="text" name="name" placeholder="Your Name">
