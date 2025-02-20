@@ -27,7 +27,8 @@ SECRET_KEY = 'django-insecure--*)3pd+&c*76gnikyo^(rnz!ivf&iy!k1z4w$l(4!$ekc0*p$8
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost',
+                  '127.0.0.1']
 
 
 # Application definition
@@ -45,9 +46,14 @@ INSTALLED_APPS = [
     'home',
     'pricing',
     'portfolio',
+    'payments',
+
+    #installed
+    'corsheaders',
 ]
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -127,7 +133,8 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'home/static'),
     os.path.join(BASE_DIR, 'contact/static'),
     os.path.join(BASE_DIR, 'pricing/static'),
-    os.path.join(BASE_DIR, 'portfolio/static')
+    os.path.join(BASE_DIR, 'portfolio/static'),
+    os.path.join(BASE_DIR, 'payments/static')
             # Global static files (like corestyles.css)
 ]
 
@@ -146,3 +153,17 @@ EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER="officialtopsoftware@gmail.com"
 EMAIL_HOST_PASSWORD="isht ceob tftj uzuh"
+SQUARE_ACCESS_TOKEN = "EAAAl5rNL2yvmYbEBB4dcacPlul-sDuifgoNAEUPTsJH6bBmpUOVNgpGWJuTfoWn"
+SQUARE_LOCATION_ID = "L539FECXHJ9E1"
+
+# ✅ Allow frontend to access Django backend
+CORS_ALLOW_ALL_ORIGINS = True  # Allow all origins (for development only)
+CORS_ALLOW_CREDENTIALS = True  # Allow sending credentials (cookies, auth tokens)
+CORS_ALLOW_METHODS = ["GET", "POST", "OPTIONS", "PUT", "DELETE"]
+
+# ✅ If you want to allow only localhost and 127.0.0.1:
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:8000",
+    "http://127.0.0.1:8000",
+]
+

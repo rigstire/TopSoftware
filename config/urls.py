@@ -22,6 +22,6 @@ urlpatterns = [
     path('contact/',include("contact.urls")),
     path("", include("home.urls")),
     path('pricing/', include("pricing.urls")),
-    path('portfolio/',include("portfolio.urls"))
-
+    path('portfolio/',include("portfolio.urls")),
+    path('payments/', include("payments.urls")),
 ]
